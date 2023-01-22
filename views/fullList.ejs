@@ -1,0 +1,26 @@
+<%- include("header") -%>
+
+<h2>All Lists</h2>
+
+<div class="box3">
+    <form action="/deleteList" method="post">
+        <p style="text-align: center;"> <a class="link" href="/">Today</a></p>
+        <% for(var i=1;i<newLists.length;i++){ %>
+            <p style="text-align: center;">    
+                <a class="link" href="<%= newLists[i].name %>"><%= newLists[i].name %></a>
+                <button type="submit" name="deletingList" value="<%= newLists[i]._id %>" class="btn btn-dark">Delete</button>
+            </p>
+        <% } %>
+    </form>
+    
+</div>
+
+
+<div class="box2">
+    <form class="item" action="/new"  method="post">
+      <input type="text" name="newList" placeholder="New List" autocomplete="off">
+      <button class="btn" type="submit" name="subbut" value=newList>></button>
+    </form>
+  </div>
+
+<%- include("footer") -%>

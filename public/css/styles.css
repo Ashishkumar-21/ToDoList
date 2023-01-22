@@ -1,0 +1,150 @@
+:root {
+  --dgreen: #00A19D;
+  --lgreen: #8ae1dd;
+}
+
+
+body {
+  background-color: #E4E9FD;
+  background-image: -webkit-linear-gradient(65deg, var(--dgreen) 50%, var(--lgreen) 50%);
+  min-height: 1000px;
+  font-family: 'helvetica neue';
+}
+
+h1 {
+  color: #fff;
+  padding: 10px;
+  font-family: "Montserrat";
+}
+
+h2{
+  text-align: center;
+  color: #fff;
+  padding: 10px;
+  font-weight: bolder;
+  font-family: "Montserrat";
+  font-size: 0px;
+}
+
+.text{
+  text-align: center;
+}
+
+.box {
+  max-width: 400px;
+  margin: 50px auto;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+.box2 {
+  max-width: 300px;
+  margin: 50px auto;
+  border-radius: 5px;
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  background-color: azure;
+}
+.box3 {
+  max-width: 350px;
+  margin: 50px auto;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+.link{
+  text-align: center;
+  color: #00204a;
+  text-decoration: none;
+}
+link:hover{
+  color: var(--dgreen);
+}
+
+#heading {
+  background-color: var(--dgreen);
+  text-align: center;
+}
+
+.item {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #F1F1F1;
+}
+
+.item:last-child {
+  border-bottom: 0;
+}
+
+input:checked+p {
+  text-decoration: line-through;
+  text-decoration-color: var(--dgreen);
+}
+
+input[type="checkbox"] {
+  margin: 20px;
+}
+
+p {
+  margin: 0;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 200;
+  color: #00204a;
+}
+
+form.item {
+  text-align: center;
+  margin-left: 20px;
+}
+
+button {
+  min-height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border-color: transparent;
+  background-color: var(--dgreen);
+  color: #fff;
+  font-size: 30px;
+  padding-bottom: 6px;
+  border-width: 0;
+}
+.btn{
+  width: 68px;
+  min-height: 15px;
+  /* border-radius: 50%; */
+  padding: 0;
+  background-color: var(--dgreen);
+  margin-left: 20px;
+
+}
+
+input[type="text"] {
+  text-align: center;
+  height: 60px;
+  top: 10px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 200;
+  width: 313px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  box-shadow: inset 0 -3px 0 0 #A683E3;
+}
+
+::placeholder {
+  color: grey;
+  opacity: 1;
+}
+
+footer {
+  color: white;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
