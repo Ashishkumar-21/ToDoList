@@ -1,4 +1,4 @@
-//jshint esversion:6
+
 
 const express = require("express");
 const bodyParser = require("body-parser");
@@ -6,8 +6,8 @@ const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 var _=require("lodash");
 
-const PORT = process.env.PORT || 3007;
-require('dotenv').config();
+// const PORT = process.env.PORT || 3007;
+// require('dotenv').config();
 const app = express();
 
 app.set('view engine', 'ejs');
@@ -16,7 +16,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
 
-mongoose.connect(process.env.ATLAS_URL,function(){
+mongoose.connect("mongodb+srv://ashishcluster:XQMEd4zqiEdyF86@cluster0.n9vaaci.mongodb.net/TodolistDB",function(){
 console.log("Connected");
 });
 
